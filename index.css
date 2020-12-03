@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.game {
+  height: 80%;
+  width: 40%;
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+#target-row {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+#board {
+  flex-wrap: wrap;
+  height: 60%;
+}
+
+#target {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: yellow;
+  margin: 20px;
+  font-size: 40px;
+}
+#currentSum {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: grey;
+  margin: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+#score {
+  height: 5%;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+#timer {
+  height: 10%;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
