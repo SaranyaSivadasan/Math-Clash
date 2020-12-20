@@ -2,19 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <title>Math Clash</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="game-container" class="game-container">
-      <div id="game" class="game">
-        <div id="target-row">
-          <div id="target" class="center">26</div>
-          <div id="currentSum" class="center">15</div>
+    <div class="center display-body" id="display-body">
+      <div class="popUp column center diplay-remove" id="popUp">
+        <div id="popUp-text" class="center"></div>
+        <button id="restart-button" class="center">RESTART</button>
+      </div>
+      <div id="game-screen">
+        <div class="sum-and-target-box row space-between-upper-divs">
+          <div id="target-box" class="center"></div>
+          <div id="sum-box" class="center"></div>
         </div>
-        <div id="score" class="center">SCORE:</div>
-        <div id="board" class="center"></div>
+        <div class="number-screen center">
+          <div id="grid-box">
+            <div id="score-box" class="center">SCORE :0</div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>
